@@ -70,5 +70,5 @@ unzip ("UCI HAR Dataset.zip")
  names(mean_extract)[-c(1:2)] <- paste("[Mean of ]" , names(mean_extract)[-c(1:2)] )
  
  #### tidy data
- write.csv(mean_extract, "tidy_data.csv")
+ write.csv(mean_extract, "tidy_data.csv",row.name=FALSE)
  
